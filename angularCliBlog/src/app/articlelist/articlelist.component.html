@@ -1,0 +1,8 @@
+<div class="col-md-12">
+  <ul class="list-group" *ngFor="let item of items">
+    <li class="list-group-item">
+      <span class="badge">{{item.viewcount}}</span>
+      <a routerLink="content/{{item.id}}" routerLinkActive="active">{{item.title}}</a>
+    </li>
+  </ul>
+</div>
