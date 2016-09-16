@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
-import {NavbarComponent} from './navbar/navbar.component';
+import {NavbarComponent} from './components/navbar/navbar.component';
 import {ROUTER_DIRECTIVES} from '@angular/router';
-// import {GetcontentService} from './getcontent.service'
 @Component({
   moduleId: module.id,
   selector: 'app-root',

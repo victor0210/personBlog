@@ -2,10 +2,9 @@
  * Created by humengtao on 16/9/16.
  */
 import {provideRouter,RouterConfig} from '@angular/router';
-import {ArticlelistComponent} from './articlelist/articlelist.component';
-import {ArticlecontentComponent} from './articlecontent/articlecontent.component';
-import {AboutComponent} from './about/about.component';
-
+import {ArticlelistComponent} from './components/articlelist/articlelist.component';
+import {ArticlecontentComponent} from './components/articlecontent/articlecontent.component';
+import {AboutComponent} from './components/about/about.component';
 
 const routes:RouterConfig=[
   {

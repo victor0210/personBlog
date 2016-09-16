@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router'
 import {ArticlecommentsComponent} from '../articlecomments/articlecomments.component';
 import {ArticlecommentareaComponent} from '../articlecommentarea/articlecommentarea.component';
-import {AppService} from '../services/app.service';
+import {AppService} from '../../services/app.service';
 import {map} from 'rxjs/operator/map';
 
 @Component({

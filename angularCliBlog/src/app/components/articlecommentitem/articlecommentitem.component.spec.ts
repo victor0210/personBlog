@@ -7,7 +7,5 @@ import { ArticlecommentitemComponent } from './articlecommentitem.component';
 
 describe('Component: Articlecommentitem', () => {
   it('should create an instance', () => {
-    // let component = new ArticlecommentitemComponent();
-    // expect(component).toBeTruthy();
   });
 });

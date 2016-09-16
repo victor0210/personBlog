@@ -7,7 +7,5 @@ import { ArticlecontentComponent } from './articlecontent.component';
 
 describe('Component: Articlecontent', () => {
   it('should create an instance', () => {
-    // let component = new ArticlecontentComponent();
-    // expect(component).toBeTruthy();
   });
 });

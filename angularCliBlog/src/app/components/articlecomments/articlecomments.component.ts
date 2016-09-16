@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {ArticlecommentitemComponent} from '../articlecommentitem/articlecommentitem.component';
-import {Http,Headers} from '@angular/http';
 
 @Component({
   moduleId: module.id,

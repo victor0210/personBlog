@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {AppService} from '../services/app.service';
+import {AppService} from '../../services/app.service';
 import {map} from 'rxjs/operator/map';
 import {ActivatedRoute} from '@angular/router';
-import {arrayify} from "tslint/lib/utils";
 
 @Component({
   moduleId: module.id,
