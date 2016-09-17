@@ -36,9 +36,8 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
-  'app/about',
-  'app/components/about/musicsearch',
-  'app/components/about/musicshow',
+  'app/components/paginate',
+  'app/components/about/ablum',
   /** @cli-barrel */
 ];
 
@@ -55,7 +54,7 @@ System.config({
   map: {
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
-    'main': 'main.js',
+    'main': 'main.js'
   },
   packages: cliSystemConfigPackages
 });

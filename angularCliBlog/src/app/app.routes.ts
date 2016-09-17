@@ -5,6 +5,7 @@ import {provideRouter,RouterConfig} from '@angular/router';
 import {ArticlelistComponent} from './components/articlelist/articlelist.component';
 import {ArticlecontentComponent} from './components/articlecontent/articlecontent.component';
 import {AboutComponent} from './components/about/about.component';
+import {ArtistComponent} from './components/about/artist/artist.component';
 
 const routes:RouterConfig=[
   {
@@ -14,7 +15,10 @@ const routes:RouterConfig=[
     path:'content/:id',component:ArticlecontentComponent
   },
   {
-    path:'about',component:AboutComponent
+    path:'music',component:AboutComponent
+  },
+  {
+    path:'music/artist/:id',component:ArtistComponent
   }
 ];
 export const appRouterProviders=[

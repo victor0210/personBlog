@@ -1,17 +1,14 @@
 import {Injectable} from '@angular/core';
-import {Http, Headers, Response} from '@angular/http';
-import {map} from 'rxjs/operator/map';
-import {forEach} from "@angular/router/src/utils/collection";
+import {Http} from '@angular/http';
+
 
 @Injectable()
 export class AppService {
-  data;
 
   constructor(private _http: Http) {
   }
 
   getContent(id) {
-
     return {
       id: id,
       title: 'this is article ' + id,
@@ -68,14 +65,5 @@ export class AppService {
         date: '2012-2-2 11:11:11'
       }
     ]
-  }
-
-  getMusicInfo(str) {
-    this._http.get("https://api.spotify.com/v1/search?q="+str+"&type=track&market=US")
-      .map(res => res.json())
-      .subscribe(res => {
-        this.data=res.tracks.items;
-      });
-    return this.data;
   }
 }

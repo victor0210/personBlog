@@ -1,11 +1,27 @@
 <form action="">
   <div class="form-group">
     <lable for="searchmusic"><h3>Search</h3></lable>
-    <input  id='searchmusic' class="form-control"  (keyup)="getMusic()" [(ngModel)]="str" [ngModelOptions]="{standalone: true}"/>
+    <input id='searchmusic' class="form-control" (keyup)="getMusic()" [(ngModel)]="str"
+           [ngModelOptions]="{standalone: true}" autocomplete="off"/>
   </div>
 </form>
-<ul *ngFor="let item of items">
-  <div class="col-md-4">
-    <img src="{{item.album.images[0].url}}">
+<div *ngIf="items">
+  <div *ngFor="let item of items.items">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well">
+          <div class="row">
+            <div class="col-md-9">
+              <h4>{{item.name}}</h4>
+            </div>
+            <div class="col-md-3">
+              <a class="btn" href="{{item.preview_url}}" target="_blank">click to preview</a>
+            </div>
+          </div>
+          <span><a routerLink="./artist/{{item.artists[0].id}}" routerLinkActive="active"
+                   (click)="getArtist(item.artists[0].id)">{{item.artists[0].name}}</a></span>
+        </div>
+      </div>
+    </div>
   </div>
-</ul>
+</div>
