@@ -2,7 +2,7 @@
   <div class="form-group">
     <lable for="searchmusic"><h3>Search</h3></lable>
     <input id='searchmusic' class="form-control" (keyup)="getMusic()" [(ngModel)]="str"
-           [ngModelOptions]="{standalone: true}" autocomplete="off"/>
+           [ngModelOptions]="{standalone: true}" autocomplete="off" placeholder="Search for songs"/>
   </div>
 </form>
 <div *ngIf="items">
