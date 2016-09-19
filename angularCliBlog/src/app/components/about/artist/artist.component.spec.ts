@@ -7,7 +7,5 @@ import { ArtistComponent } from './artist.component';
 
 describe('Component: Artist', () => {
   it('should create an instance', () => {
-    let component = new ArtistComponent();
-    expect(component).toBeTruthy();
   });
 });

@@ -15,5 +15,4 @@ bootstrap(AppComponent,
     provideForms(),
     disableDeprecatedForms(),
     HTTP_PROVIDERS,
-    HTTP_BINDINGS
   ]);

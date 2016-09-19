@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +10,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['namespace' => 'Controllers\Api', 'prefix' => 'ajax'], function () {
+    Route::get('/articles','ArticlesController@index');
+    Route::get('/articles/{id}','ArticlesController@getArticleItem');
+    Route::get('/articles/{id}/comments','ArticlesController@getArticleComments');
+    Route::match(['login', 'options'],'/login','ArticlesController@login')->middleware('cors');
 });

@@ -7,7 +7,5 @@ import { MusicsearchComponent } from './musicsearch.component';
 
 describe('Component: Musicsearch', () => {
   it('should create an instance', () => {
-    let component = new MusicsearchComponent();
-    expect(component).toBeTruthy();
   });
 });
